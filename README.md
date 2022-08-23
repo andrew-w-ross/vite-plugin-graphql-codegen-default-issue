@@ -1,0 +1,1 @@
+# vite-plugin-graphql-codegen-default-issue
