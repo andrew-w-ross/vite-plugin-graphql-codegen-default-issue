@@ -5,5 +5,9 @@ import codegen from 'vite-plugin-graphql-codegen';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), codegen()]
+  plugins: [react(), codegen({
+    //Shouldn't need this
+    enableWatcher: true,
+    debug: true
+  })]
 })

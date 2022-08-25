@@ -1,0 +1,16 @@
+schema: src/schema.ts
+documents:
+  - "src/**/*.tsx"
+emitLegacyCommonJSImports: false
+generates:
+  ./src/resolverTypes.ts:
+    plugins:
+      - typescript
+      - typescript-resolvers
+    config:
+      useTypeImports: true
+      useIndexSignature: true
+      emitLegacyCommonJSImports: false
+      defaultScalarType: unknown
+  ./src/gql/:
+    preset: gql-tag-operations-preset

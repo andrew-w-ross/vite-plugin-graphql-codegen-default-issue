@@ -2,18 +2,23 @@
   "name": "vite-plugin-graphql-codegen-default-issue",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "graphql": "^16.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "vite-plugin-graphql-codegen": "^2.0.0"
+    "vite-plugin-graphql-codegen": "^2.0.1"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^2.11.7",
+    "@graphql-codegen/gql-tag-operations-preset": "^1.5.5",
+    "@graphql-codegen/typescript": "^2.7.3",
+    "@graphql-codegen/typescript-resolvers": "^2.7.3",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.1",
